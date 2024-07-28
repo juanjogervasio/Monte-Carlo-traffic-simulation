@@ -6,7 +6,7 @@ The Nagel-Schreckenberg model is a probabilistic cellular automaton that replica
 * The positions and velocities are updated following these rules:
   * Acceleration: $V_{i}(t+1) = V_{i}(t)+1$, unless $V_{i}(t) = V_{max}$ , in which case it remains the same.
   * Braking: if the updated velocity is greater than or equal to the distance $d_{i}(t)$ to the next car, then a collision will occur. If this is the case, the velocity is reduced back to $V_{i}(t)$.
-  * Random breaking: in a real scenario, a driver can stop accelerating due to a distraction, a mechanical problem, etc. To take this into account, a braking $V_{i}(t+1) \rightarrow V_{i}(t+1)-1$ is introduced with probaility $p$.
+  * Random braking: in a real scenario, a driver can stop accelerating due to a distraction, a mechanical problem, etc. To take this into account, a braking $V_{i}(t+1) \rightarrow V_{i}(t+1)-1$ is introduced with probaility $p$.
   * In the last step, the positions are updated to  $x_{i}(t+1) = x_{i}(t) + V_{i}(t+1)$
 
 This process is repeated for a large number of iterations in order to reproduce the stationary state of the system. In this project, I made simulations varying the number of cars to obtain the corresponding fundamental diagram (traffic flow vs car density) and explore the results for different values of $V_{max}$ and $p$.
