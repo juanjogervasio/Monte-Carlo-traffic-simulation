@@ -11,4 +11,4 @@ The Nagel-Schreckenberg model is a probabilistic cellular automaton that replica
 
 This process is repeated for a large number of iterations in order to reproduce the stationary state of the system. In this project, I made simulations varying the number of cars to obtain the corresponding fundamental diagram (traffic flow vs car density) and explore the results for different values of $V_{max}$ and $p$.
 
-For further details, see the Jupyter notebook files [Work in progress].
+For further details, see the [Jupyter notebook file](https://github.com/juanjogervasio/Monte-Carlo-traffic-simulation/blob/master/Fundamental%20diagrams.ipynb) [Work in progress].
